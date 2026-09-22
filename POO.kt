@@ -39,7 +39,16 @@ fun main() {
     val sirveElCodigo = miLibro.chequearCodigo("clave123")
     println("el codigo es correcto $sirveElCodigo")
 }
+
+/*
+Resultado del Ejercicio 1:
+el senor de los anillos
+libro el senor de los anillos de tolkien
+el libro el senor de los anillos ahora esta prestado
+el codigo es correcto true
 */
+
+/* 
 /*aca hice la clase libro con datos publicos para que se vean en cualquier lado
 tambien use internal para el estado asi solo se maneja dentro de este modulo
 y le puse private al codigo interno porque es sensible y nadie de afuera debe verlo*/
@@ -80,6 +89,15 @@ fun main() {
 
     println("saldo final para consultar de afuera ${miCuenta.saldo}")
 }*/
+/*
+Resultado del Ejercicio 2:
+
+mi cuenta es cta98765
+mi saldo inicial es 1000.0
+depositaste 500.0 el saldo quedo en 1500.0
+retiraste 200.0 el saldo quedo en 1300.0
+saldo final para consultar de afuera 1300.0
+*/
 
 /*aca arme la cuenta bancaria usando val en el numero para que se vea pero no se cambie
 al saldo le puse private set para que cualquiera lo consulte pero nadie lo altere directo
@@ -115,6 +133,13 @@ fun main() {
     miMemoria.mostrarInfo()
 }*/
 
+/*
+Resultado del Ejercicio 3:
+
+procesador intel core i7 con 8 nucleos
+memoria de 16 gb instalada en un equipo asus
+*/
+
 /*aca hice el computador con un procesador como clase anidada normal para que no dependa del equipo
 y le agregue la memoria usando la palabra inner para que si pueda leer la marca del computador
 asi queda tal cual el ejercicio mostrando la diferencia entre las dos formas de meter clases*/
@@ -148,6 +173,13 @@ fun main() {
     estado.mostrarDetalle()
 }*/
 
+/*
+Resultado del Ejercicio 4:
+
+el impuesto es 190.0
+el pedido ped123 con total 1000.0 esta en estado enviado
+*/
+
 /*  aca cree el pedido con una clase anidada para calcular el impuesto sin depender del pedido
  y una clase interna con inner que si usa el total y el codigo del pedido principal para ver el estado*/
 
@@ -169,6 +201,13 @@ fun main() {
 
 println("impresion legible del usuario original $usuario1")
 } */
+/*
+Resultado del Ejercicio 5:
+
+los usuarios 1 y 2 son iguales true
+usuario modificado Usuario(id=1, nombre=carlos, correo=nuevo@mail.com)
+impresion legible del usuario original Usuario(id=1, nombre=carlos, correo=carlos@mail.com)
+*/
 
 /*aca cree el data class usuario para que compare objetos automaticamente con equals
 tambien use la funcion copy para cambiar un atributo facil manteniendo el resto
@@ -192,6 +231,15 @@ val productoConDescuento = producto1.copy(precio = 35000.0)
     println("producto clonado con nuevo precio $productoConDescuento")
     }
 */
+
+/*
+Resultado del Ejercicio 5:
+
+el producto 1 y 2 son iguales true
+el producto 1 y 3 son iguales false
+producto original Producto(nombre=camisa, precio=45000.0, categoria=ropa)
+producto clonado con nuevo precio Producto(nombre=camisa, precio=35000.0, categoria=ropa)
+*/
 /*aca use data class para el producto con nombre precio y categoria para que compare facil
 tambien clone un producto cambiando solo el precio con copy y se imprime estructurado solo */
 
@@ -212,6 +260,14 @@ println("las ubicaciones son iguales ${ubicacion1 == ubicacion2}")
 val (lat, lon, alt) = ubicacion1
     println("valores desestructurados latitud $lat longitud $lon altitud$alt")
     } 
+*/
+
+/*
+Resultado del Ejercicio 7:
+
+las ubicaciones son iguales true
+copia con cambio minimo Coordenada(latitud=4.711, longitud=-74.0817, altitud=2600.0)
+valores desestructurados latitud 4.6097 longitud -74.0817 altitud 2600.0
 */
 
 /*
@@ -245,6 +301,15 @@ fun main() {
         evaluarResultado(res2)
         evaluarResultado(res3)
      }
+*/
+
+/*
+Resultado del Ejercicio 8:
+
+Plaintext
+operacion exitosa datos guardados
+fallo la operacion codigo 500 detalle error de servidor
+la operacion sigue en progreso
 */
 /*
 aca cree una sealed class llamada resultadooperacion para definir estados cerrados
@@ -282,6 +347,16 @@ fun main() {
     procesarAutenticacion(auth3)
 }
 */
+
+/*
+Resultado del Ejercicio 9:
+
+Plaintext
+bienvenido de vuelta carlos
+contrasena incorrecta te quedan 2 intentos
+cuenta bloqueada por demasiados intentos fallidos
+*/
+
 /*
 aca use una sealed class para definir los estados posibles de la autenticacion
 cree clases hijas para el usuario valido las credenciales incorrectas y la cuenta bloqueada
@@ -316,6 +391,14 @@ fun main() {
     println("el salario de ${emp1.nombre} es ${emp1.calcularSalario()}")
     println("el salario de ${emp2.nombre} es ${emp2.calcularSalario()}")
 }
+*/
+
+/*
+Resultado del Ejercicio 10:
+
+Plaintext
+el salario de carlos es 2500000.0
+el salario de ana es 1400000.0
 */
 
 /*
@@ -362,6 +445,14 @@ fun main() {
 */
 
 /*
+
+Resultado del Ejercicio 11:
+
+area del circulo 78.54 y perimetro 31.416
+area del rectangulo 24.0 y perimetro 20.0
+ */
+
+/*
 aca cree una clase abstracta figura con metodos vacios para area y perimetro
 despues hice las clases concretas circulo y rectangulo heredando de figura
 asi cada una calcula su propio resultado obligatoriamente con override
@@ -400,6 +491,16 @@ fun main() {
     println("-------------------")
     pago2.procesarPago()
 }
+*/
+
+/*
+Resultado del Ejercicio 12:
+
+procesando pago con tarjeta terminada en 3456
+comprobante por un valor de 150000.0
+-------------------
+procesando pago en efectivo en caja
+comprobante por un valor de 50000.0
 */
 
 /*
